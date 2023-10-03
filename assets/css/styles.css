@@ -216,6 +216,7 @@ form{
 
 #section-2{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .seller-row{
@@ -233,4 +234,104 @@ form{
         border: 1px solid rgba(0, 0, 0, 0.08);
         background: #FFF;
         padding: 27px 44px;
+}
+
+.seller-card-description{
+    padding: 28px 19px 31px 18px;
+}
+
+.seller-button{
+    padding: 4px 10px 3px 11px;
+    color: white;
+    background-color: #28A745;
+    border: 0.31px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.col-s-3{
+    width: 23% !important;
+}
+
+.size-card{
+    border: 1px solid #0000001F;
+    border-radius: 40px;
+    padding: 8px 24px;
+    margin-top: 10px;
+}
+
+.size-row{
+    gap: 10px;
+}
+
+.seller-bottom{
+    margin-top: 20px;
+}
+
+#section-3{
+    margin-top: 40px;
+}
+
+.section-3-heading{
+    text-transform: uppercase;
+    margin-top: 92px;
+}
+
+.section-3-row{
+    margin-top: 20px;
+}
+
+.section-3-box{
+    border-radius: 17px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        overflow: hidden;
+        margin-top: 40px;
+}
+
+.section-3-img-container{
+    position: relative;
+    border: 1px solid #0000001F;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.section-3-img-container::before{
+    position: absolute;
+    content: "-10% OFF";
+    color: #FFF;
+    height: 1.5rem;
+    width: 200px;
+    background-color: #D36B31;
+    transform: rotate(-41.689deg);
+    text-align: center;
+    top: 20%;
+    left: -20%;
+    z-index: 2;
+}
+
+.section-3-box-description{
+    padding: 18px 14px 30px 14px;
+}
+
+footer{
+    background-color: #0D0D0D;
+    padding-top: 28px 0 80px 0;
+    color: white;
+}
+
+.footer-section{
+    background-color: #171717;
+    padding: 22px 0;
+}
+
+.footer-para{
+    opacity: 0.6;
+}
+
+.opacity-70{
+    opacity: 0.7;
+}
+
+.white-space-nowrap{
+    white-space: nowrap;
 }

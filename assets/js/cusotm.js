@@ -42,3 +42,39 @@ function displayTab(tabId) {
 }
 
 displayTab('tab-1');
+
+// NAVBAR
+
+let navLabel = document.querySelector("label");
+let navMenu = document.querySelector(".menu");
+let flag = 0;
+
+navLabel.addEventListener("click", () => {
+    if (flag == 0) {
+        navMenu.style.right = 0;
+        navLabel.classList.add("switch-label");
+        document.body.classList.add("overflow-y-hidden");
+        flag++;
+    }
+
+    else {
+        navMenu.style.right = '-100%';
+        navLabel.classList.remove("switch-label");
+        document.body.classList.remove("overflow-y-hidden");
+        flag--;
+    }
+});
+
+// NAVBAR A TAGS 
+let aTags = document.querySelectorAll(".menu a");
+
+aTags.forEach((a) => {
+    a.addEventListener('click', () => {
+        if (flag != 0) {
+            navMenu.style.right = '-100%';
+            navLabel.classList.remove("switch-label");
+            document.body.classList.remove("overflow-y-hidden");
+            flag--;
+       }
+    });
+});
